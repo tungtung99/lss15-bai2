@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let check=1;
+        let a = prompt("Nhập a: ")
+        let b = prompt("Nhập b: ")
+        let c = prompt("Nhập c: ")
+        if(a >0 && b>0 && c>0){
+            if(a+b>c && a+c>b && b+c>a){
+                check=1
+            }
+            else{
+                check=0
+            }
+        }
+        else{
+            check=0
+        }
+        if(check==1){
+            alert("Đây là 3 cạnh của tam giác")
+        }
+        else{
+            alert("Đây không là 3 cạnh của tam giác")
+        }
+    </script>
+</body>
+</html>
